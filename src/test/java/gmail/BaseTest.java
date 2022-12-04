@@ -5,13 +5,11 @@ import io.appium.java_client.android.AndroidDriver;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
-    private static Logger LOGGER = LogManager.getLogger(BaseTest.class);
     public static AndroidDriver driver;
+    private static Logger LOGGER = LogManager.getLogger(BaseTest.class);
 
     @AfterSuite
     public void quitDriver() {
@@ -20,15 +18,9 @@ public class BaseTest {
     }
 
     @BeforeSuite
-    protected void setUp(){
+    protected void setUp() {
         LOGGER.info("Before Suite: ");
         LOGGER.info("*** Setting up the driver ***");
-        driver=new DriverConfig().getDriver();
+        driver = new DriverConfig().getDriver();
     }
-
-
-//    @AfterSuite
-//    public void quitDriver(){
-//        AndroidDriverSingleton.quitDriver();
-//    }
 }

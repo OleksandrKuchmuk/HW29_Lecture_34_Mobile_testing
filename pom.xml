@@ -23,7 +23,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.6.0</version>
+            <version>3.141.59</version>
         </dependency>
         <dependency>
             <groupId>log4j</groupId>
@@ -39,6 +39,11 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>31.1-jre</version>
+        </dependency>
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>8.0.0-beta</version>
         </dependency>
         <dependency>
             <groupId>io.appium</groupId>
